@@ -8,7 +8,7 @@ parallel-jobs = 1
 [Music]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 build-mode = "module"
-excluded-patches = "'GmsCore support'"
+excluded-patches = ""
 
 [Reddit]
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
@@ -23,33 +23,9 @@ patcher-args = "-Oclient-id=3f1BRnssrLen465fGtsWYA "
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 build-mode = "module"
 included-patches = "'Enable slide to seek'"
-excluded-patches = "'Return YouTube Dislike' 'Shorts autoplay' 'GmsCore support'"
+excluded-patches = "'Return YouTube Dislike' 'Shorts autoplay'"
 
 [ml.docilealligator.infinityforreddit]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/docile-alligator/infinity-for-reddit/"
 build-mode = "both"
 patcher-args = "-Oclient-id=rTVdw2HOxK7Z2_Nlo4BYFw "
-
-
-
-# dont build on gh actions (https://github.com/j-hc/revanced-magisk-module/issues/554)
-[Music-Extended]
-enabled = false
-app-name = "Music"
-patches-source = "inotia00/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-build-mode = "both"
-arch = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-
-[YouTube-Extended]
-enabled = false
-app-name = "YouTube"
-patches-source = "inotia00/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
