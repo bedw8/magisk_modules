@@ -7,25 +7,31 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 [Music]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
-build-mode = "module"
+build-mode = "both"
 excluded-patches = ""
 
 [Reddit]
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
-build-mode = "both"
+build-mode = "apk"
+#module-prop-name = "reddit-vanced"                       # magisk module prop name.
 
 [Boost]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/ruben-mayayo/boost-for-reddit/"
-build-mode = "both"
+build-mode = "apk"
 patcher-args = "-Oclient-id=3f1BRnssrLen465fGtsWYA "
+#module-prop-name = "boost-vanced"                       # magisk module prop name.
+version = "latest"
 
 [YouTube]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
-build-mode = "module"
+build-mode = "both"
 included-patches = "'Enable slide to seek'"
 excluded-patches = "'Return YouTube Dislike' 'Shorts autoplay'"
 
 [ml.docilealligator.infinityforreddit]
+app-name = "Infinity"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/docile-alligator/infinity-for-reddit/"
-build-mode = "both"
+build-mode = "apk"
 patcher-args = "-Oclient-id=rTVdw2HOxK7Z2_Nlo4BYFw "
+#module-prop-name = "infinity-vanced"                       # magisk module prop name.
+version = "latest"
