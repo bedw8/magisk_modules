@@ -1,4 +1,5 @@
 Boost: 1.12.12  
+Music: 7.29.52  
 Reddit: 2024.17.0  
 YouTube: 19.47.53  
 
